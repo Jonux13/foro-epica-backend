@@ -30,7 +30,7 @@ app.use(helmet({
 
 
 const port = process.env.PORT || 3000;
-const route = /api/post
+const route = '/api/post'
 
   // Redirección a la ruta para la dirección raíz, "/post"
 
