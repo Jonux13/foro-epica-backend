@@ -30,6 +30,7 @@ app.use(helmet({
 
 
 const port = process.env.PORT || 3000;
+const route = /api/post
 
   // Redirección a la ruta para la dirección raíz, "/post"
 
@@ -37,7 +38,7 @@ const port = process.env.PORT || 3000;
 app.use('/', postRouter)
 
 app.listen(port, () => {
-  console.log(`Servidor escuchando en puerto ${port}`);
+  console.log(`Servidor escuchando en puerto ${port}${route}`);
   startDb()
 }); 
 
