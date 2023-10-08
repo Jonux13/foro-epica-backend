@@ -1,0 +1,28 @@
+### Peticion GET
+GET  http://localhost:3000/api/post
+
+
+### Peticion POST para publicar un nuevo post
+POST http://localhost:3000/api/post
+Content-Type: application/json
+
+{
+    "titulo": "Titulo",
+    "contenido": "mensaje",
+    "url": "https://imgv3.fotor.com/images/side/%C2%BF-Como-hacer-una-imagen-PNG.png"
+}
+
+
+### Petición para para actualizar el post por id
+PUT  http://localhost:3000/api/post/1
+Content-Type: application/json
+
+{
+    "titulo": "nuevo",
+    "contenido": "nuevo contenido",
+    "url": "www.url.com"
+}
+
+
+### Peticion para eliminar el post po id
+DELETE http://localhost:3000/api/post/1
